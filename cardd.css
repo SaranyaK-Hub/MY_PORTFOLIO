@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.skill1 {
+    height: 370px;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.num {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background:black;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    z-index: 5;
+}
+
+.num h2 {
+    margin: 0;
+    font-size: 80px;
+   
+}
+
+.circle {
+    height: 50px;
+    width: 80px;
+    background-color: rgb(77, 75, 75);
+    border-radius: 0 20% 0 110%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+} 
+.project-overall {
+    width: 100%;
+    min-height: 67vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aqua */
+     padding: 30px;
+}
+
+.project-left {
+    width: 40%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-color: red; */
+}
+
+.clippath1 {
+    width: 350px;
+    height: 300px;
+    background-image: url(./Global.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(122, 119, 119, 0.5);
+    border-radius: 20px;
+    box-shadow: 1px 2px 8px 5px gray;
+    clip-path: path('M20,0 L330,51 Q350,51 350,71 L350,229 Q350,249 330,249 L20,300 Q0,300 0,280 L0,20 Q0,0 20,0 Z');
+    position: absolute;
+    transition: 2s all;
+}
+
+.clippath2 {
+    width: 350px;
+    height: 300px;
+    background-color: rgba(98, 125, 194, 0.954);
+    border-radius: 20px;
+    box-shadow: 1px 2px 8px 5px gray;
+    clip-path: path('M20,0 L330,51 Q350,51 350,71 L350,229 Q350,249 330,249 L20,300 Q0,300 0,280 L0,20 Q0,0 20,0 Z');
+    position: absolute;
+    left: 100px;
+    top: 40px;
+    transition: 2s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-left:hover .clippath2 {
+    transform: translateY(-100px);
+    background-color: rgba(122, 119, 119, 0.5);
+}
+
+.project-left:hover .clippath1 {
+    transform: translateY(100px);
+    background-color: transparent;
+} */
